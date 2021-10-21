@@ -49,6 +49,7 @@ nav li a{
 }
 
 /* **********************Image de fond****************************** */
+/*
 #imageDeFond{
     padding-top: 60px;
     background:url(medias/NYcv.jpg) no-repeat fixed 50% 50%;
@@ -56,11 +57,12 @@ nav li a{
     height: 799px;
     opacity: 0,3;
     
-}
+}*/
 #headerText{
     position: fixed;
 
 }
+/*
 #imageDeFond h1{
     font-family: 'Comfortaa', cursive;
     text-align: center;
@@ -68,8 +70,6 @@ nav li a{
     color: #2f2f3a; 
     font-size: 4em;
     margin-top: 300px;
-    /* opacity: 1; */
+    /* opacity: 1; 
 }
-#imageCv{
-    text
-}
+*/

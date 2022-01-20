@@ -7,4 +7,6 @@ body,html {
 .container{
     width: 90%;
     margin: auto;
+    position: relative;
+    z-index: 999;
 }

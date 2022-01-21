@@ -25,7 +25,9 @@ $recipes = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Gianni Jouve</title>
 </head>
 <body> 
@@ -42,20 +44,20 @@ $recipes = [
                 </a>
                 <div class="nav-links">
                     <a href="/" class="nav-item">
-                        <span style="color: #FFE162; font-size: 1rem;" >
+                        <span style="color: #00C6CF; font-size: 1rem;" >
                             <i class="fas fa-home"></i>
                         </span>
                         About Me
                     </a>
                     <a href="/" class="nav-item">
-                        <span style="color: #91C483; font-size: 1rem;">
+                        <span style="color: #00C6CF; font-size: 1rem;">
                             <i class="fas fa-code"></i>
                         </span>
                         Portfolio
                     </a>
                     
                     <a href="/" class="nav-item">
-                        <span style="color: #FF6464; font-size: 1rem;">
+                        <span style="color: #00C6CF; font-size: 1rem;">
                             <i class="fas fa-inbox"></i>
                         </span>
                         Contact Me
@@ -63,9 +65,10 @@ $recipes = [
                 </div>
             </div>
         </div>
+        <div class="divisionLine"></div>
         <div class="header-slogan">
             <div class="header-slogan-title">FULL-STACK DEVELOPER</div>
-            <img src="/public/img/cvPhoto.jpg" alt="">
+            <img src="/public/img/cvPhoto.jpg" alt="" class="imgId">
         </div>
     </div>
 </body>

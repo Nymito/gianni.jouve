@@ -12,6 +12,7 @@ $recipes = [
 <!DOCTYPE html>
 <html>
 <head>
+    
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,20 +45,20 @@ $recipes = [
                 </a>
                 <div class="nav-links">
                     <a href="/" class="nav-item">
-                        <span style="color: #00C6CF; font-size: 1rem;" >
+                        <span class="nav-item-logo">
                             <i class="fas fa-home"></i>
                         </span>
                         About Me
                     </a>
                     <a href="/" class="nav-item">
-                        <span style="color: #00C6CF; font-size: 1rem;">
+                        <span class="nav-item-logo">
                             <i class="fas fa-code"></i>
                         </span>
                         Portfolio
                     </a>
                     
                     <a href="/" class="nav-item">
-                        <span style="color: #00C6CF; font-size: 1rem;">
+                        <span class="nav-item-logo">
                             <i class="fas fa-inbox"></i>
                         </span>
                         Contact Me
@@ -71,5 +72,6 @@ $recipes = [
             <img src="/public/img/cvPhoto.jpg" alt="" class="imgId">
         </div>
     </div>
+   
 </body>
 </html>

@@ -1,12 +1,14 @@
-.containerContent{
+.containerFooter{
     width: 80%;
-    height: 330px;
+    height: 345px;
     margin: 0 auto;
     margin-top: 1rem;
-}
-.aboutMe{
     background-color: red;
-    
+}
+.preAbout{
+ 
+    height: 100%;
+    width: 100%;
 }
 
 .divisionLine{
@@ -15,93 +17,137 @@
     border-radius: 20%;
     background-color: var(--nav-font-color);
     margin: 0 auto;
+    margin-bottom: 4rem;
+    z-index: 10;
 }
 
 .titleContent{
     text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive; 
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
 }
 
-/* ################################################################################# */
+.containerContent{
+    height: 50vw;
+    width: 100%;
+    background-color: blue;
+}
 
-section {
+.aboutMe{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+/* RESPONSIVE PART */
+
+@media (max-width: 930px) {
+    .divisionLine{
+      display: none;
+    }
+    .containerFooter .titleContent{
+      font-size: 1.3rem;
+      margin-top: 2.6rem;
+    }
+    .containerFooter{
+      height: 220px;
+    }
+    .preAbout{
+      height: 150px;
+    }
+    .containerContent{
+      height: 900px;
+    }
+    .aboutMe{
+      width: 90%;
+    }
+}
+
+
+/* ##############################Imported animation css############################ */
+.scrolldown {
+  --color: var(--nav-logo-color);
+  --sizeX: 30px;
+  --sizeY: 50px;
   position: relative;
-  width: 100%;
-  height: 100%;
-}
-.scroll a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: var(--nav-font-color);
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
-}
-.scroll a:hover {
-  opacity: .5;
-}
-#section10 a {
-  padding-top: 60px;
-}
-#section10 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid var(--nav-font-color);
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
   border-radius: 50px;
   box-sizing: border-box;
+  margin-bottom: 16px;
+  margin: 0 auto;
 }
-#section10 a span::before {
+
+.scrolldown::before {
+  content: "";
   position: absolute;
-  top: 10px;
+  bottom: 30px;
   left: 50%;
-  content: '';
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: var(--nav-font-color);
+  background-color: var(--color);
   border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
+  animation: scrolldown-anim 2s infinite;
   box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
 }
-@-webkit-keyframes sdb10 {
+
+@keyframes scrolldown-anim {
   0% {
-    -webkit-transform: translate(0, 0);
     opacity: 0;
+    height: 6px;
   }
   40% {
     opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
+    height: 10px;
   }
   80% {
     transform: translate(0, 20px);
+    height: 10px;
     opacity: 0;
   }
   100% {
+    height: 3px;
     opacity: 0;
+  }
+}
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid var(--color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+.chevrondown:nth-child(odd) {
+  animation: pulse 500ms ease infinite alternate;
+}
+.chevrondown:nth-child(even) {
+  animation: pulse 500ms ease infinite alternate 250ms;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
   }
 }

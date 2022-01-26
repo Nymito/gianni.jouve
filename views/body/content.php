@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-    <div class="containerContent">
+    <div class="containerFooter">
         <div class="divisionLine">
 
         </div>
-        <section id="section10" class="scroll">
-            <a href="#thanks"><span></span>Scroll</a>
-        </section>
         <div class="content">
-            <div class="aboutMe">
+            <div class="preAbout">
                 <div class="titleContent">
-                    ABOUT ME
+                    Scroll Down
                 </div>
-                <section id="section10" class="scroll">
-                    <a href="#thanks"><span></span>Scroll</a>
-                </section>
+                <div class='scrolldown'>
+                    <div class="chevrons">
+                        <div class='chevrondown'></div>
+                        <div class='chevrondown'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerContent">
+        <div class="aboutMe">
+            <div class="titleAbout">
+
+            </div>
+            <div class="contentAbout">
+
             </div>
         </div>
     </div>

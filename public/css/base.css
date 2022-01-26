@@ -3,6 +3,16 @@ body,html {
     padding: 0;
     font-family: 'Dongle', sans-serif;
     font-size: 1.5rem;
+    /* STORE COLORS VARIABLES */
+    --header-color: #2F3A8F;
+    --nav-logo-color: #FE7E6D;
+    --nav-logo-hover-color: #ff523b;
+    --nav-bg-color: #FEECE9;
+
+    --nav-font-color: #474554;
+    --header-font-color: black;
+
+    --body-bg-color: white;
 }
 
 .container{
@@ -11,3 +21,4 @@ body,html {
     position: relative;
     z-index: 999;
 }
+

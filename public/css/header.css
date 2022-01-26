@@ -1,7 +1,9 @@
+
+
 .header{
     width: 100%;
     height: 600px;
-    background-color: #d9d9d9;
+    background-color: var(--nav-bg-color);
     position: relative;
 }
 .navbar{
@@ -11,19 +13,21 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .nav-logo{
     width: 200px;
     height: 80px;
     text-decoration: none;
     background: url('/public/img/logo.png') center no-repeat;
+    object-fit: cover;
     position: relative;
     z-index: 999;
 }
 .nav-item{
    text-decoration: none;
-   color: #1a2627;
+   color: var(--nav-font-color);
    margin-left: 3rem;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
 }
 
 .header-bg{
@@ -32,10 +36,13 @@
     left: 0;
     width: 100%;
     height: 520px;
-    background: url('/public/img/work.png') center no-repeat;
+    
     background-size: cover;
     z-index: 1;
-    opacity: 0.7;
+   
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--header-color));
+    
+    
 }
 
 .header-mask{
@@ -48,7 +55,7 @@
 }
 
 .logo-circle{
-    background-color: white;
+    background-color: var(--body-bg-color);
     width: 165px;
     height: 20px;
     border-bottom-left-radius: 150px;
@@ -57,7 +64,7 @@
 }
 
 .header-slogan{
-    margin-top: 3rem;
+    margin-top: 6rem;
     width: 100%;
     height: 440px;
     text-align: center;
@@ -65,39 +72,43 @@
     position: relative;
     z-index: 20;
     font-family: 'Bebas Neue', cursive; 
-    color: #1a2627;
+    color: var(--header-font-color);
 }
 
 .imgId{
-    border-radius: 50%;
+    border-radius: 10%; 
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 2px #2d4344 solid;
+    border: 0px #2d4344 solid;
     position: relative;
     z-index: 20;
 }
 
-.divisionLine{
+/* .divisionLine{
     width: 100%;
     background-color: #2d4344;
-    height: 2px;
+    height: 1px;
     position: relative;
     z-index: 20;
-}
+} */
+
 .nav-item-logo{
-    color: #00C6CF; 
-    font-size: 1rem;
+    color: var(--nav-logo-color); 
+    font-size: .8rem;
 }
 
 .nav-item:hover .nav-item-logo{
-    color: #0fefff;
+    color: var(--nav-logo-hover-color); 
 }
 
-button{
-    background: none;
-    border: none;
-}
+.btn{
+    width: 170px;
+    height: 60px;
+    border-radius: 20%;
+    text-decoration: none;
+}   
+
 /* MOBILE OR LITTLE SCREEN  */
 @media (max-width: 930px) {
     .imgId{
@@ -106,6 +117,7 @@ button{
     }
     .header-slogan{
         font-size: 1.5rem;
+        
     }
     .nav-item{
         /*. display: none; */
@@ -134,4 +146,132 @@ button{
     .header{
         height: 670px;
     }
+    
+    .heroHeader{
+        display: none;
+    }
+    .button-49{
+        top: 200px;
+    }
+
+}
+
+.heroHeader{
+    position: absolute;
+    width: 450px;
+    height: 393px;
+    z-index: 21;
+    top: 38%;
+    left: 11%;
+}
+@media (max-width: 1500px) {
+    .heroHeader{
+        width: 337px;
+        height: 294px;
+        top: 50%;
+        left: 11%;
+    }
+}
+
+
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 3%;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ff523b 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 1px var();
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'CONTACT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, white 5%);
+  text-shadow: -3px -3px 0px #0c0c0b, 3px 3px 0px #EEC373;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 69px;
+    line-height: 70px;
+  }
 }

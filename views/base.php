@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <script src="public/scripts/content.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/base.css">
     <link rel="stylesheet" href="public/css/content.css">

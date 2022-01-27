@@ -8,7 +8,10 @@
                 <div class="titleContent">
                     Scroll Down
                 </div>
-                <div class='scrolldown'>
+                <a class="starTheme" onclick="changeTheme()"> 
+                    <i class="fab fa-ethereum"></i>
+                </a>
+                <div class='scrolldown' id="test">
                     <div class="chevrons">
                         <div class='chevrondown'></div>
                         <div class='chevrondown'></div>

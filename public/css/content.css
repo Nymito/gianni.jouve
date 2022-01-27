@@ -3,7 +3,6 @@
     height: 345px;
     margin: 0 auto;
     margin-top: 1rem;
-    background-color: red;
 }
 .preAbout{
  
@@ -18,6 +17,7 @@
     background-color: var(--nav-font-color);
     margin: 0 auto;
     margin-bottom: 4rem;
+    margin-top: 3rem;
     z-index: 10;
 }
 
@@ -41,6 +41,24 @@
     width: 80%;
     margin: 0 auto;
 
+}
+
+.starTheme{
+  font-size: 2rem;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  color: var(--nav-logo-hover-color);
+  z-index: 4;
+}
+
+.starTheme:hover{
+  color: var(--header-color);
+}
+
+.starTheme:hover .stars{
+  color: var(--header-bg-color);
+  
 }
 
 /* RESPONSIVE PART */
@@ -69,6 +87,7 @@
 
 
 /* ##############################Imported animation css############################ */
+/* 1 */
 .scrolldown {
   --color: var(--nav-logo-color);
   --sizeX: 30px;

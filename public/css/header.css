@@ -121,6 +121,26 @@
     text-decoration: none;
 }   
 
+#svg2{
+  position: relative;
+  bottom: 60px;
+}
+
+#svg1{
+  display: none;
+}
+
+#svg3{
+  display: none;
+  position: relative;
+  bottom: 60px;
+}
+#svg4{
+  display: none;
+  position: relative;
+  bottom: 60px;
+}
+
 /* MOBILE OR LITTLE SCREEN  */
 @media (max-width: 930px) {
     .imgId{

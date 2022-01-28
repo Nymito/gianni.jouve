@@ -52,7 +52,8 @@
             
             <button class="button-49" role="button"> Contact Me  <i class="far fa-paper-plane"></i></button>
         </div>
-        <img src="/public/img/userHeader.svg" class="heroHeader">
+        <img src="/public/img/userHeader.svg" class="heroHeader" id="heroHeader">
+        
     </div>
 </body>
 </html>

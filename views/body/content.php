@@ -8,7 +8,13 @@
                 <div class="titleContent">
                     Scroll Down
                 </div>
-                <a class="starTheme" onclick="changeTheme()"> 
+                <a class="starTheme" onclick="changeGeo()"> 
+                    <i class="fab fa-ethereum"></i>
+                </a>
+                <a class="palette" onclick="displayColors()">
+                    <i class="fas fa-palette"></i>
+                </a>
+                <a class="starTheme2" onclick="changeColor3()"> 
                     <i class="fab fa-ethereum"></i>
                 </a>
                 <div class='scrolldown' id="test">

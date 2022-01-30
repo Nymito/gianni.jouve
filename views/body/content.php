@@ -8,15 +8,26 @@
                 <div class="titleContent">
                     Scroll Down
                 </div>
-                <a class="starTheme" onclick="changeGeo()"> 
-                    <i class="fab fa-ethereum"></i>
+                <a class="palette-button" onclick="popIcons()">
+                    <i class="fas fa-palette palette-icon"></i>
                 </a>
-                <a class="palette" onclick="displayColors()">
-                    <i class="fas fa-palette"></i>
-                </a>
-                <a class="starTheme2" onclick="changeColor3()"> 
-                    <i class="fab fa-ethereum"></i>
-                </a>
+                <div class="palette-subicons" id="subiconT">
+                    <a onclick="changeSvg3()" class="subicons top-icons" id="subicon3">
+                        <i class="gg-shape-triangle"></i>
+                    </a>
+                    
+                    <a onclick="changeSvg1()" class="subicons top-icons" id="subicon5">
+                        <i class="far fa-circle"></i>
+                    </a>
+                    <a onclick="changeSvg2()" class="subicons top-icons" id="subicon4">
+                        <i class="far fa-square"></i>
+                    </a>
+                </div>
+                <div class="palette-subicons" id="subiconB">
+                    <div class="subicons" id="subicon6" onclick="changeColor1()"></div>
+                    <div class="subicons" id="subicon7" onclick="changeColor2()"></div>
+                    <div class="subicons" id="subicon8" onclick="changeColor3()"></div>
+                </div>
                 <div class='scrolldown' id="test">
                     <div class="chevrons">
                         <div class='chevrondown'></div>

@@ -20,7 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href='https://css.gg/shape-triangle.css' rel='stylesheet'>
     <title>Gianni Jouve</title>
+
 </head>
 <body> 
     <?php

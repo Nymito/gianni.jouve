@@ -46,9 +46,8 @@
 
 .palette-button{
   display: flex;
-  position: absolute;
-  left: 100px;
-  bottom: 70px;
+  position: inherit;
+
   width: 50px;
   height: 50px;
   background-color: var(--palette-bg-color);
@@ -59,74 +58,133 @@
   color: var(--header-font-color);
   box-shadow: 0px 2px 4px 2px #000000;
   z-index: 50;
+
 }
 
 .palette-button:hover{
   background-color: var(--palette-bg-hover-color);
 }
 
+
 .palette-subicons{
-  position: absolute;
+  position: inherit;
   width: 210px;
   height: 90px;
   z-index: 2;
 }
 #subiconB{
-  bottom: -20px;
+  bottom: 0px;
   left: 20px;
 }
 #subiconT{
-  bottom: 120px;
+  top: 0;
   left: 20px;
 }
 .subicons{
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  position: absolute;
+  position: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 4px 2px #000000;
   font-size: 1rem;
-
+  transition: .3s linear;
+}
+.subicons:hover{
+  cursor: pointer;
 }
 .top-icons{
-  background-color: var(--header-color);
-  color: var(--nav-logo-hover-color);
+  background-color: var(--palette-bg-color);
+  color: black;
 }
 #subicon3{
-  bottom: 0;
-  left: 0;
+  bottom: -40px;
+  left: 86px;
+  opacity: 0;
 }
-.special-triangle{
-  font-size: 1.2rem;
+.move3 {
+  transition: .3s linear;
+  margin-bottom: 40px;
+  margin-left: -85px;
 }
+
 #subicon4{
-  bottom: 0;
-  right: 0;
+  bottom: -40px;
+  right: 85px;
+  
+}
+.move4 {
+  transition: .3s linear;
+  margin-bottom: 40px;
+  margin-right: -85px;
 }
 #subicon5{
-  top: 0;
+  top: 85px;
   left: 85px;
+  opacity: 0.5;
+}
+.move5 {
+  transition: .3s linear;
+  margin-top: -85px;
+  
 }
 #subicon6{
-  top: 0;
-  left: 0;
+  top: -40px;
+  left: 85px;
   background-color: var(--main-color-theme1);
+  opacity: 0.5;
+}
+.move6 {
+  transition: .3s linear;
+  margin-top: 40px;
+  margin-left: -85px;
 }
 #subicon7{
-  top: 0;
-  right: 0;
+  top: -40px;
+  right: 85px;
   background-color: var(--main-color-theme2);
 }
+.move7 {
+  transition: .3s linear;
+  margin-top: 40px;
+  margin-right: -85px;
+}
 #subicon8{
-  bottom: 0;
+  bottom: 85px;
   left: 85px;
   background-color: var(--main-color-theme3);
 }
+.move8 {
+  transition: .3s linear;
+  margin-bottom: -85px;
+}
+
+.special-triangle{
+  font-size: 1.2rem;
+}
+
+.palette-all{
+  position: absolute;
+  width: 250px;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 10px;
+}
+
 
 /* RESPONSIVE PART */
+
+@media only screen and (min-width: 200px) and (max-width: 930px) {
+  .palette-all{
+    display: none;
+  }
+}
 
 @media (max-width: 930px) {
     .divisionLine{

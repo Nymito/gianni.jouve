@@ -1,3 +1,17 @@
+window.addEventListener('load', init, false);
+
+function init(){
+    palette = document.getElementById('palette-button');
+
+    subicon1 = document.getElementById('subicon3');
+    subicon2 = document.getElementById('subicon4');
+    subicon3 = document.getElementById('subicon5');
+    subicon4 = document.getElementById('subicon6');
+    subicon5 = document.getElementById('subicon7');
+    subicon6 = document.getElementById('subicon8');
+
+    palette.onclick = function(){popIcons()};
+}
 
 function changeGeo(){
 
@@ -21,19 +35,13 @@ function changeSvg1(){
     $('#svg2').css('display','inline');
     $('#svg3').css('display','none');
     $('#svg4').css('display','none');
-
-    $('#subicon3').css('opacity', '1');
-    $('#subicon4').css('opacity', '1');
-    $('#subicon5').css('opacity', '0.5');
+    return;
 }
 function changeSvg2(){
     $('#svg2').css('display','none');
     $('#svg3').css('display','inline');
     $('#svg4').css('display','none');
-
-    $('#subicon3').css('opacity', '1');
-    $('#subicon4').css('opacity', '0.5');
-    $('#subicon5').css('opacity', '1');
+    return;
 }
 
 function changeSvg3(){
@@ -41,9 +49,7 @@ function changeSvg3(){
     $('#svg3').css('display','none');
     $('#svg4').css('display','inline');
 
-    $('#subicon3').css('opacity', '0.5');
-    $('#subicon4').css('opacity', '1');
-    $('#subicon5').css('opacity', '1');
+    return;
 }
 
 
@@ -69,35 +75,43 @@ function changeColorTemp(headerColor, navLogoColor, navLogoHoverColor, navFontCo
 function changeColor2(){
     changeColorTemp("#6b705c","#f4a261","#F98224","#4D5437");
     $("#heroHeader").attr("src","/public/img/userHeader2.svg");
-
-    $('#subicon6').css('opacity', '1');
-    $('#subicon7').css('opacity', '0.5');
-    $('#subicon8').css('opacity', '1');
     return;
 }
 function changeColor1(){
     changeColorTemp("#2F3A8F","#FE7E6D","#ff523b","#474554");
     $("#heroHeader").attr("src","/public/img/userHeader.svg");
-    
-    $('#subicon6').css('opacity', '0.5');
-    $('#subicon7').css('opacity', '1');
-    $('#subicon8').css('opacity', '1');
     return;
 }
 function changeColor3(){
     changeColorTemp("#EA99D5","#B762C1","#8946A6","#323232");
     $("#heroHeader").attr("src","/public/img/userHeader3.svg");
-   
-    $('#subicon6').css('opacity', '1');
-    $('#subicon7').css('opacity', '1');
-    $('#subicon8').css('opacity', '0.5');
     return;
 }
 
-/* function popIcons(){
-    console.log('here');
-    if($('subicons').css('display') == 'none'){
-        $('subicons').css('display','flex');
+
+function moveIcon(element, classElement){
+    if( element.classList.contains(classElement)){
+        element.classList.remove(classElement);
+        element.style.opacity = "0";
+    }else{
+        element.classList.add(classElement);
+        element.style.opacity = "1";
     }
     return;
-} */
+}
+
+
+function popIcons(){
+    console.log(subicon1);
+
+    moveIcon(subicon1, "move3");
+    moveIcon(subicon2, "move4");
+    moveIcon(subicon3, "move5");
+    moveIcon(subicon4, "move6");
+    moveIcon(subicon5, "move7");
+    moveIcon(subicon6, "move8");
+    
+
+    return;
+} 
+

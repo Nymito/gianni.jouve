@@ -50,7 +50,7 @@
             <div class="header-slogan-title2">Full-Stack Developer</div>
             <!-- <img src="/public/img/cvPhoto.png" alt="" class="imgId"> -->
             
-            <button class="button-49" role="button"> Contact Me  <i class="far fa-paper-plane"></i></button>
+            <button class="button-29 " role="button "> Contact Me <i class="far fa-paper-plane"></i></button>
         </div>
         <img src="/public/img/userHeader.svg" class="heroHeader" id="heroHeader">
         

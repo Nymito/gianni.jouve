@@ -43,8 +43,10 @@
     <div class="containerContent">
         <div class="aboutMe">
             <div class="titleAbout">
-
+                ABOUT ME
             </div>
+            <div class="titleLine"></div>
+            <img src="/public/img/devUser.png" class="devUserImg">
             <div class="contentAbout">
 
             </div>

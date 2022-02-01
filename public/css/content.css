@@ -33,15 +33,16 @@
 .containerContent{
     height: 50vw;
     width: 100%;
-    background-color: blue;
 }
 
 .aboutMe{
     height: 100%;
     width: 80%;
     margin: 0 auto;
-
-}
+    background-color: var(--header-color);
+    border-radius: 40%;
+    border-top-left-radius: 10%;
+  }
 
 
 .palette-button{
@@ -62,7 +63,7 @@
 }
 
 .palette-button:hover{
-  background-color: var(--palette-bg-hover-color);
+  background-color: var(--nav-font-color);
 }
 
 
@@ -177,6 +178,32 @@
   bottom: 10px;
 }
 
+.titleAbout{
+  position: relative;
+  margin-left: 1rem;
+  top: 2rem;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', cursive; 
+  margin-bottom: 1rem;
+}
+
+.aboutMe .titleLine{
+  position: relative;
+  width: 180px;
+  height: 7px;
+  border-radius: 20%;
+  background-color: var(--nav-font-color);
+  left: 1.7rem;
+  top:1rem;
+}
+
+.devUserImg{
+  position: relative;
+  width: 231px;
+  height: 183px;
+  top: 3rem;
+  
+}
 
 /* RESPONSIVE PART */
 

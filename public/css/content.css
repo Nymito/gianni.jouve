@@ -16,7 +16,7 @@
     border-radius: 20%;
     background-color: var(--nav-font-color);
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     margin-top: 3rem;
     z-index: 10;
 }
@@ -31,24 +31,26 @@
 }
 
 .containerContent{
-    height: 50vw;
+    height: 800px;
     width: 100%;
+
 }
 
 .aboutMe{
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    background-color: var(--header-color);
+    position: relative;
+    height: 650px;
+    width: 800px;
+    top: 0;
+    background-image: linear-gradient(to bottom, white 50%, var(--header-color));
+
     border-radius: 40%;
-    border-top-left-radius: 10%;
-  }
+}
 
 
 .palette-button{
   display: flex;
   position: inherit;
-
+  
   width: 50px;
   height: 50px;
   background-color: var(--palette-bg-color);
@@ -181,10 +183,11 @@
 .titleAbout{
   position: relative;
   margin-left: 1rem;
+  
   top: 2rem;
   font-size: 3rem;
   font-family: 'Bebas Neue', cursive; 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .aboutMe .titleLine{
@@ -192,24 +195,44 @@
   width: 180px;
   height: 7px;
   border-radius: 20%;
-  background-color: var(--nav-font-color);
+  background-image: var(--nav-font-color);
   left: 1.7rem;
   top:1rem;
 }
 
 .devUserImg{
-  position: relative;
-  width: 231px;
+  position: absolute;
+  width: 240px;
   height: 183px;
-  top: 3rem;
-  
+  object-fit: cover;
+  right: 0;
+  margin-right: 0;
+  transform: rotate(-90deg);
+}
+.contentAbout{
+  margin: 1rem;
+  width: 700px;
+}
+
+
+
+.svgsContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-color: red;
+}
+.svgContent{
+  position: relative;
+  top: 0;
 }
 
 /* RESPONSIVE PART */
 
 @media only screen and (min-width: 200px) and (max-width: 930px) {
   .palette-all{
-    display: none;
+    display: none;  
   }
 }
 

@@ -1,0 +1,7 @@
+.portfolioSection {
+    top: 0;
+    background-color: var(--main-color-contrast);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}

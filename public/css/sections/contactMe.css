@@ -1,0 +1,7 @@
+.contactMe {
+    top: 0;
+    background-color: var(--header-color);
+    color: wheat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}

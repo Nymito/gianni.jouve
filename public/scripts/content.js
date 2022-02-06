@@ -10,6 +10,9 @@ function init(){
     subicon5 = document.getElementById('subicon7');
     subicon6 = document.getElementById('subicon8');
 
+    welcomeSvg = document.getElementById('welcomeSvg');
+    
+
     palette.onclick = function(){popIcons()};
 }
 
@@ -48,7 +51,7 @@ function changeSvg3(){
     $('#svg2').css('display','none');
     $('#svg3').css('display','none');
     $('#svg4').css('display','inline');
-
+    
     return;
 }
 
@@ -65,26 +68,30 @@ function changeSvg( selector1, selector2){
     
 }
 
-function changeColorTemp(headerColor, navLogoColor, navLogoHoverColor, navFontColor){
+function changeColorTemp(headerColor, navLogoColor, navLogoHoverColor, navFontColor, contrastColor){
     document.querySelector(":root").style.setProperty('--header-color', headerColor);
     document.querySelector(":root").style.setProperty('--nav-logo-color', navLogoColor);
     document.querySelector(":root").style.setProperty('--nav-logo-hover-color', navLogoHoverColor);
     document.querySelector(":root").style.setProperty('--nav-font-color', navFontColor);
+    document.querySelector(":root").style.setProperty('--main-color-contrast', contrastColor);
 }
 
-function changeColor2(){
-    changeColorTemp("#6b705c","#f4a261","#F98224","#4D5437");
-    $("#heroHeader").attr("src","/public/img/userHeader2.svg");
+function changeColor1(){
+    changeColorTemp("#2F3A8F","#FE7E6D","#ff523b","#474554","#F2ECFF");
+    $("#heroHeader").attr("src","/public/img/userHeader.svg");
+    $("#welcomeSvg").attr("src","/public/img/welcomingBlue.svg");
     return;
 }
-function changeColor1(){
-    changeColorTemp("#2F3A8F","#FE7E6D","#ff523b","#474554");
-    $("#heroHeader").attr("src","/public/img/userHeader.svg");
+function changeColor2(){
+    changeColorTemp("#6b705c","#f4a261","#F98224","#4D5437","#ECF5CF");
+    $("#heroHeader").attr("src","/public/img/userHeader2.svg");
+    $("#welcomeSvg").attr("src","/public/img/welcomingGreen.svg");
     return;
 }
 function changeColor3(){
-    changeColorTemp("#EA99D5","#B762C1","#8946A6","#323232");
+    changeColorTemp("#8946A6","#5FBAB0","#49817A","#323232","#FFE7FF");
     $("#heroHeader").attr("src","/public/img/userHeader3.svg");
+    $("#welcomeSvg").attr("src","/public/img/welcomingPink.svg");
     return;
 }
 

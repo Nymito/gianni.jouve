@@ -42,19 +42,41 @@
     </div>
 
     <div class="containerContent">
-        
-        <img src="/public/img/devUser.png" class="devUserImg">
-        <div class="aboutMe">
-            <div class="titleAbout">
-                ABOUT ME
+        <div class="sections aboutMe">
+            <img src="/public/img/welcomingBlue.svg" class="welcomeSvg" id="welcomeSvg">
+            <div class="titleSectionsL">
+                ABOUT ME.
             </div>
-            <div class="titleLine"></div>
+            <div class="workedWith">
+                <div class="titleWorked">Worked with </div>
+                <div class="logos">
+                    <img src="/public/img/django.png" class="logo">
+                    <img src="/public/img/nodejs.png" class="logo">
+                    <img src="/public/img/java.png" class="logo">
+                    <img src="/public/img/python.png" class="logo">
+                    <img src="/public/img/flutter.png" class="logo">
+                   
+                </div>
+            </div>
             
             <div class="contentAbout">
                 I am a graduated engineer in computer sciences. Since more than 3 years, I have been hired as an apprentice in 2 huge companies.
                 Thales Alenia Space and Societe Generale.
                 I enjoy coding, it has been a part of my life for few years now.
                 Thank you for beeing here and do not forget to discover my Portfolio section to discover other projects I have worked on.
+            </div>
+            <a href="public/files/GJCVVF.pdf">
+                <button class="button-29 resumeButton " role="button "> Download my Resume <i class="fas fa-download"></i></button>
+            </a>
+            </div>
+        <div class="sections portfolioSection">
+            <div class="titleSectionsR">
+                PORTFOLIO.
+            </div>
+        </div>
+        <div class="sections contactMe">
+            <div class="titleSectionsL">
+                CONTACT ME.
             </div>
         </div>
     </div>

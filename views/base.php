@@ -6,8 +6,14 @@
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/base.css">
     <link rel="stylesheet" href="public/css/content.css">
+    <link rel="stylesheet" href="public/css/sections/aboutMe.css">
+    <link rel="stylesheet" href="public/css/sections/contactMe.css">
+    <link rel="stylesheet" href="public/css/sections/portfolio.css">
+    <link rel="stylesheet" href="public/css/buttons/palette.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">

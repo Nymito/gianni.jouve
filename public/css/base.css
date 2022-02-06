@@ -1,4 +1,4 @@
-:root{
+:root {
     /* STORE COLORS VARIABLES */
     --header-color: #2F3A8F;
     --nav-logo-color: #FE7E6D;
@@ -6,31 +6,28 @@
     --nav-logo-hover-lighter-color: #ff806f;
     --body-logo-hover-color: #d8db26;
     --nav-bg-color: #FEECE9;
-
     --nav-font-color: #474554;
     --header-font-color: black;
-
     --body-bg-color: white;
-
-    --palette-bg-color: #FEECE9;
-
-    --main-color-theme1:#2F3A8F;
-    --main-color-theme2:#6b705c;
-    --main-color-theme3:#EA99D5;
+    --palette-bg-color: var(--nav-logo-color);
+    --main-color-theme1: #2F3A8F;
+    --main-color-theme2: #6b705c;
+    --main-color-theme3: #B762C1;
+    --svg-color: #00C895;
+    --main-color-contrast: #F2ECFF;
 }
 
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Dongle', sans-serif;
     font-size: 1.5rem;
-    
 }
 
-.container{
+.container {
     width: 90%;
     margin: auto;
     position: relative;
     z-index: 999;
 }
-

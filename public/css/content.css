@@ -1,16 +1,16 @@
-.containerFooter{
+.containerFooter {
     width: 80%;
     height: 345px;
     margin: 0 auto;
     margin-top: 1rem;
 }
-.preAbout{
- 
+
+.preAbout {
     height: 100%;
     width: 100%;
 }
 
-.divisionLine{
+.divisionLine {
     width: 500px;
     height: 7px;
     border-radius: 20%;
@@ -21,327 +21,171 @@
     z-index: 10;
 }
 
-.titleContent{
+.titleContent {
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Bebas Neue', cursive;
     font-weight: 500;
     color: black;
     margin-bottom: 1rem;
 }
 
-.containerContent{
-    height: 800px;
+.containerContent {
+    height: 1950px;
     width: 100%;
-
 }
 
-.aboutMe{
+.sections {
     position: relative;
     height: 650px;
-    width: 800px;
-    top: 0;
-    background-image: linear-gradient(to bottom, white 50%, var(--header-color));
-
-    border-radius: 40%;
+    width: 100%;
 }
 
-
-.palette-button{
-  display: flex;
-  position: inherit;
-  
-  width: 50px;
-  height: 50px;
-  background-color: var(--palette-bg-color);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  color: var(--header-font-color);
-  box-shadow: 0px 2px 4px 2px #000000;
-  z-index: 50;
-
+.titleSectionsL {
+    position: relative;
+    margin-left: 5rem;
+    z-index: 10;
+    top: 4rem;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 5rem;
 }
 
-.palette-button:hover{
-  background-color: var(--nav-font-color);
+.titleSectionsR {
+    position: relative;
+    margin-right: 5rem;
+    z-index: 10;
+    top: 4rem;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 5rem;
+    text-align: right;
 }
 
-
-.palette-subicons{
-  position: inherit;
-  width: 210px;
-  height: 90px;
-  z-index: 2;
-}
-#subiconB{
-  bottom: 0px;
-  left: 20px;
-}
-#subiconT{
-  top: 0;
-  left: 20px;
-}
-.subicons{
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 4px 2px #000000;
-  font-size: 1rem;
-  transition: .3s linear;
-}
-.subicons:hover{
-  cursor: pointer;
-}
-.top-icons{
-  background-color: var(--palette-bg-color);
-  color: black;
-}
-#subicon3{
-  bottom: -40px;
-  left: 86px;
-  opacity: 0;
-}
-.move3 {
-  transition: .3s linear;
-  margin-bottom: 40px;
-  margin-left: -85px;
-}
-
-#subicon4{
-  bottom: -40px;
-  right: 85px;
-  
-}
-.move4 {
-  transition: .3s linear;
-  margin-bottom: 40px;
-  margin-right: -85px;
-}
-#subicon5{
-  top: 85px;
-  left: 85px;
-  opacity: 0.5;
-}
-.move5 {
-  transition: .3s linear;
-  margin-top: -85px;
-  
-}
-#subicon6{
-  top: -40px;
-  left: 85px;
-  background-color: var(--main-color-theme1);
-  opacity: 0.5;
-}
-.move6 {
-  transition: .3s linear;
-  margin-top: 40px;
-  margin-left: -85px;
-}
-#subicon7{
-  top: -40px;
-  right: 85px;
-  background-color: var(--main-color-theme2);
-}
-.move7 {
-  transition: .3s linear;
-  margin-top: 40px;
-  margin-right: -85px;
-}
-#subicon8{
-  bottom: 85px;
-  left: 85px;
-  background-color: var(--main-color-theme3);
-}
-.move8 {
-  transition: .3s linear;
-  margin-bottom: -85px;
-}
-
-.special-triangle{
-  font-size: 1.2rem;
-}
-
-.palette-all{
-  position: absolute;
-  width: 250px;
-  height: 220px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  bottom: 10px;
-}
-
-.titleAbout{
-  position: relative;
-  margin-left: 1rem;
-  
-  top: 2rem;
-  font-size: 3rem;
-  font-family: 'Bebas Neue', cursive; 
-  margin-bottom: 2rem;
-}
-
-.aboutMe .titleLine{
-  position: relative;
-  width: 180px;
-  height: 7px;
-  border-radius: 20%;
-  background-image: var(--nav-font-color);
-  left: 1.7rem;
-  top:1rem;
-}
-
-.devUserImg{
-  position: absolute;
-  width: 240px;
-  height: 183px;
-  object-fit: cover;
-  right: 0;
-  margin-right: 0;
-  transform: rotate(-90deg);
-}
-.contentAbout{
-  margin: 1rem;
-  width: 700px;
-}
-
-
-
-.svgsContent{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 800px;
-  background-color: red;
-}
-.svgContent{
-  position: relative;
-  top: 0;
-}
 
 /* RESPONSIVE PART */
 
 @media only screen and (min-width: 200px) and (max-width: 930px) {
-  .palette-all{
-    display: none;  
-  }
+    .palette-all {
+        display: none;
+    }
 }
 
 @media (max-width: 930px) {
-    .divisionLine{
-      display: none;
+    .divisionLine {
+        display: none;
     }
-    .containerFooter .titleContent{
-      font-size: 1.3rem;
-      margin-top: 2.6rem;
+    .containerFooter .titleContent {
+        font-size: 1.3rem;
+        margin-top: 2.6rem;
     }
-    .containerFooter{
-      height: 220px;
+    .containerFooter {
+        height: 220px;
     }
-    .preAbout{
-      height: 150px;
+    .preAbout {
+        height: 150px;
     }
-    .containerContent{
-      height: 900px;
+    .containerContent {
+        height: 900px;
     }
-    .aboutMe{
-      width: 90%;
+    .aboutMe {
+        width: 90%;
     }
 }
 
 
 /* ##############################Imported animation css############################ */
+
+
 /* 1 */
+
 .scrolldown {
-  --color: var(--nav-logo-color);
-  --sizeX: 30px;
-  --sizeY: 50px;
-  position: relative;
-  width: var(--sizeX);
-  height: var(--sizeY);
-  margin-left: var(sizeX / 2);
-  border: calc(var(--sizeX) / 10) solid var(--color);
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  margin: 0 auto;
+    --color: var(--nav-logo-color);
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    margin: 0 auto;
 }
 
 .scrolldown::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: var(--color);
-  border-radius: 100%;
-  animation: scrolldown-anim 2s infinite;
-  box-sizing: border-box;
-  box-shadow: 0px -5px 3px 1px #ffffff66;
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #ffffff66;
 }
 
 @keyframes scrolldown-anim {
-  0% {
-    opacity: 0;
-    height: 6px;
-  }
-  40% {
-    opacity: 1;
-    height: 10px;
-  }
-  80% {
-    transform: translate(0, 20px);
-    height: 10px;
-    opacity: 0;
-  }
-  100% {
-    height: 3px;
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+        height: 6px;
+    }
+    40% {
+        opacity: 1;
+        height: 10px;
+    }
+    80% {
+        transform: translate(0, 20px);
+        height: 10px;
+        opacity: 0;
+    }
+    100% {
+        height: 3px;
+        opacity: 0;
+    }
 }
+
 .chevrons {
-  padding: 6px 0 0 0;
-  margin-left: -3px;
-  margin-top: 48px;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .chevrondown {
-  margin-top: -6px;
-  position: relative;
-  border: solid var(--color);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
 }
+
 .chevrondown:nth-child(odd) {
-  animation: pulse 500ms ease infinite alternate;
+    animation: pulse 500ms ease infinite alternate;
 }
+
 .chevrondown:nth-child(even) {
-  animation: pulse 500ms ease infinite alternate 250ms;
+    animation: pulse 500ms ease infinite alternate 250ms;
 }
+
 @keyframes pulse {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
 }
+
 
 /* 2 */

@@ -5,3 +5,17 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
+
+.form-label {
+    font-size: .8rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+}

@@ -114,6 +114,10 @@
     margin: 0 auto;
 }
 
+.scrolldown:hover {
+    cursor: pointer;
+}
+
 .scrolldown::before {
     content: "";
     position: absolute;

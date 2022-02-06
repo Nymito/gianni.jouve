@@ -22,20 +22,20 @@
                 <a href="/" class="nav-logo">
                 </a>
                 <div class="nav-links">
-                    <a href="/" class="nav-item">
+                    <a href="#aboutMe" class="nav-item">
                         <span class="nav-item-logo">
                             <i class="fas fa-user"></i>
                         </span>
                         About
                     </a>
-                    <a href="/" class="nav-item">
+                    <a href="#portfolio" class="nav-item">
                         <span class="nav-item-logo">
                             <i class="fas fa-code"></i>
                         </span>
                         Portfolio
                     </a>
                     
-                    <a href="/" class="nav-item">
+                    <a href="#contactMe" class="nav-item">
                         <span class="nav-item-logo">
                             <i class="fas fa-inbox"></i>
                         </span>
@@ -50,7 +50,7 @@
             <div class="header-slogan-title2">Full-Stack Developer</div>
             <!-- <img src="/public/img/cvPhoto.png" alt="" class="imgId"> -->
             
-            <button class="button-29 " role="button "> Contact Me <i class="far fa-paper-plane"></i></button>
+            <button class="button-29 buttonTemplate " role="button "> Contact Me <i class="far fa-paper-plane"></i></button>
         </div>
         <img src="/public/img/userHeader.svg" class="heroHeader" id="heroHeader">
         

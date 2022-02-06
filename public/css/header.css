@@ -191,8 +191,8 @@
     .heroHeader {
         display: none;
     }
-    .button-29,
-    .button-29:after {
+    .buttonTemplate,
+    .buttonTemplate:after {
         top: 70px;
     }
 }
@@ -207,8 +207,8 @@
 }
 
 @media (min-width: 768px) {
-    .button-29,
-    .button-29:after {
+    .buttonTemplate,
+    .buttonTemplate:after {
         width: 200px;
         height: 69px;
         line-height: 70px;

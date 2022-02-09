@@ -1,8 +1,5 @@
 window.addEventListener('load', init, false);
 
-AOS.init({
-    duration: 1200,
-})
 
 function init() {
     palette = document.getElementById('palette-button');

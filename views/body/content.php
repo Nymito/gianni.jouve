@@ -84,29 +84,38 @@
         <div class="titleSectionsL">
             CONTACT ME.
         </div>
-        <div class="form">
+        <div class="form" method="POST" action="sendMail.php">
+            
             <div class="form-name">
                 <div class="form-label">
                     NAME
                 </div>
-                <input class="form-name-input">
+                <input class="form-name-input name" name="name" placeholder="Your name">
             </div>
             <div class="form-email">
                 <div class="form-label">
                     E-MAIL
                 </div>
-                <input class="form-email-input">
+                <input class="form-email-input email" name="email" placeholder="Your e-mail">
             </div>
             <div class="form-message">
                 <div class="form-label">
                     MESSAGE
                 </div>
-                <input class="form-message-input">
+                <textarea class="form-message-input message" name="message" placeholder="Your message here"></textarea>
             </div>
-            <button>SEND</button>
+            <button type="submit" name="submit">SEND</button>
+            
+
         </div>
     </div>
 </div>
 
 
 </html>
+<?php
+    echo '<pre>';
+
+        print_r($_POST);
+    echo '</pre>';
+?>

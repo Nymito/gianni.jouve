@@ -84,7 +84,7 @@
         <div class="titleSectionsL">
             CONTACT ME.
         </div>
-        <div class="form" method="POST" action="sendMail.php">
+        <div class="form" method="POST">
             
             <div class="form-name">
                 <div class="form-label">

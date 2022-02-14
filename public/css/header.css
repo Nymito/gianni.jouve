@@ -151,20 +151,23 @@
 /* MOBILE OR LITTLE SCREEN  */
 
 @media only screen and (min-width: 100px) and (max-width: 400px) {
+    .nav-logo {
+        display: none;
+    }
     .header-slogan-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .header-slogan-title2 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .nav-item {
         /*. display: none; */
         width: 100%;
-        font-size: .7rem;
+        font-size: .9rem;
         margin-left: 0;
     }
     .nav-item-logo {
-        font-size: .4rem;
+        font-size: .6rem;
     }
     .navbar {
         flex-direction: column;
@@ -184,9 +187,16 @@
     .palette-all {
         display: none;
     }
+    .buttonTemplate,
+    .buttonTemplate:after {
+        font-size: .5rem;
+    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 930px) {
+    .nav-logo {
+        display: none;
+    }
     .header-slogan-title {
         font-size: 1.9rem;
     }
@@ -226,6 +236,7 @@
     .buttonTemplate,
     .buttonTemplate:after {
         top: 70px;
+        font-size: .7rem;
     }
 }
 
@@ -277,7 +288,6 @@
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow, transform;
-    font-size: 18px;
 }
 
 .button-29:focus {

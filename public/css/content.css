@@ -3,6 +3,7 @@
     height: 345px;
     margin: 0 auto;
     margin-top: 1rem;
+    background-color: red;
 }
 
 .preAbout {
@@ -65,9 +66,9 @@
 
 /* RESPONSIVE PART */
 
-@media only screen and (min-width: 200px) and (max-width: 930px) {
-    .palette-all {
-        display: none;
+@media only screen and (min-width: 100px) and (max-width: 930px) {
+    .containerFooter {
+        margin-top: -2.5rem;
     }
 }
 

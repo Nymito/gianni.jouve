@@ -150,11 +150,43 @@
 
 /* MOBILE OR LITTLE SCREEN  */
 
-@media only screen and (min-width: 200px) and (max-width: 930px) {
-    .imgId {
-        width: 240px;
-        height: 240px;
+@media only screen and (min-width: 100px) and (max-width: 400px) {
+    .header-slogan-title {
+        font-size: 1rem;
     }
+    .header-slogan-title2 {
+        font-size: .8rem;
+    }
+    .nav-item {
+        /*. display: none; */
+        width: 100%;
+        font-size: .7rem;
+        margin-left: 0;
+    }
+    .nav-item-logo {
+        font-size: .4rem;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 100px;
+    }
+    .nav-links {
+        width: 90vw;
+        height: 70px;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .heroHeader {
+        display: none;
+    }
+    .palette-all {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 930px) {
     .header-slogan-title {
         font-size: 1.9rem;
     }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <body>
-<div class="header">
+    <div class="header">
         <div class="header-bg"></div>
         <div class="header-mask">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 500" preserveAspectRatio="none" height="400%" width="100%" id="svg2">

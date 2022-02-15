@@ -100,6 +100,9 @@ a {
         right: auto;
         margin: 1.2rem;
     }
+    .logos {
+        padding-left: 1rem;
+    }
     .logo {
         height: 50px;
         width: 90px;
@@ -107,9 +110,10 @@ a {
     }
     .resumeButton {
         display: flex;
-        top: auto;
+        width: 100%;
+        left: auto;
         bottom: 80px;
+        top: auto;
         justify-content: center;
-        width: 100px;
     }
 }

@@ -19,3 +19,14 @@
     height: 300px;
     margin: 0 auto;
 }
+
+
+/* RESPONSIVE PART */
+
+@media only screen and (min-width: 100px) and (max-width: 930px) {}
+
+@media only screen and (min-width: 400px) and (max-width: 930px) {
+    .contactMe {
+        width: 100vw;
+    }
+}

@@ -61,6 +61,7 @@
     color: wheat;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    overflow: hidden;
 }
 
 .resumeButton {
@@ -72,4 +73,43 @@
 
 a {
     text-decoration: none;
+}
+
+
+/* RESPONSIVE PART */
+
+@media only screen and (min-width: 100px) and (max-width: 930px) {
+    .contentAbout {
+        width: 80%;
+        font-size: .6rem;
+    }
+    .workedWith {
+        top: 500px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 930px) {
+    .aboutMe {
+        width: 100vw;
+        height: 100vh;
+    }
+    .workedWith {
+        height: 250px;
+        top: 450px;
+        width: 85vw;
+        right: auto;
+        margin: 1.2rem;
+    }
+    .logo {
+        height: 50px;
+        width: 90px;
+        margin: .3rem;
+    }
+    .resumeButton {
+        display: flex;
+        top: auto;
+        bottom: 80px;
+        justify-content: center;
+        width: 100px;
+    }
 }

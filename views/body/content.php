@@ -114,7 +114,7 @@
 
 </html>
 <?php
-session_start();
+/* session_start();
 if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     http_response_code(500);
     exit();
@@ -139,6 +139,6 @@ $header = "From: noreply@BarberetRemy.com\n";
 $header .= "Reply-To: $email";  
 
 if(!mail($to, $subject, $body, $header))
-    http_response_code(500);
+    http_response_code(500); */
 
 ?>

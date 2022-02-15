@@ -226,10 +226,10 @@
     }
     .header-bg {
         top: 150px;
-        height: 50vh;
+        height: 75%;
     }
     .header {
-        height: 68vh;
+        height: 10%;
     }
     .heroHeader {
         display: none;

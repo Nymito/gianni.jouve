@@ -139,6 +139,7 @@
     justify-content: center;
     left: 0;
     bottom: 10px;
+    z-index: 30;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 930px) {

@@ -49,17 +49,20 @@
         <div class="titleSectionsL">
             ABOUT ME.
         </div>
-        <div class="workedWith">
-            <div class="titleWorked">Worked with </div>
-            <div class="logos">
-                <img src="/public/img/django.png" class="logo">
-                <img src="/public/img/nodejs.png" class="logo">
-                <img src="/public/img/java.png" class="logo">
-                <img src="/public/img/python.png" class="logo">
-                <img src="/public/img/flutter.png" class="logo">
+        <div class="containerWorked">
+            <div class="workedWith">
+                <div class="titleWorked">Worked with </div>
+                <div class="logos">
+                    <img src="/public/img/django.png" class="logo">
+                    <img src="/public/img/nodejs.png" class="logo">
+                    <img src="/public/img/java.png" class="logo">
+                    <img src="/public/img/python.png" class="logo">
+                    <img src="/public/img/flutter.png" class="logo">
 
+                </div>
             </div>
         </div>
+        
 
         <div class="contentAbout">
             I am a graduated engineer in computer sciences. Since more than 3 years, I have been hired as an apprentice in 2 huge companies.

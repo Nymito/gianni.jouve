@@ -6,6 +6,27 @@
     font-size: 1rem;
 }
 
+.containerCars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.cards {
+    width: 90%;
+    height: 100%;
+    background-color: red;
+}
+
+
+/* .arrow1 {
+    
+} */
+
 
 /* RESPONSIVE PART */
 

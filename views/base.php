@@ -4,6 +4,7 @@
     <script src="public/scripts/content.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://kit.fontawesome.com/7870449ae9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/base.css">
     <link rel="stylesheet" href="public/css/content.css">
@@ -29,6 +30,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href='https://css.gg/shape-triangle.css' rel='stylesheet'>
     <title>Gianni Jouve</title>
+    <link rel = "icon" href = "/public/img/gialog.png" 
+        type = "image/x-icon">
 
 </head>
 <body> 

@@ -87,14 +87,14 @@
         <div class="titleSectionsR">
             PORTFOLIO.
         </div>
-        <div class="containerCars">
+        <!-- <div class="containerCars">
             <div class="arrow1"><i class="fa-solid fa-arrow-left"></i></div>
             <div class="cards">
                 <div class="card1"></div>
                 <div class="card2"></div>
             </div>
             <div class="arrow2"></div>
-        </div>
+        </div> -->
     </div>
     <div class="sections contactMe" id="contactMe">
         <div class="titleSectionsL">

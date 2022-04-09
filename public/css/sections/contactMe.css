@@ -13,20 +13,143 @@
 .form {
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
-    justify-content: center;
     width: 80%;
     height: 300px;
     margin: 0 auto;
 }
 
+.contactForm {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    margin: -5% auto 0 auto;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.byeSvg {
+    position: absolute;
+    z-index: 11;
+    bottom: -8px;
+    right: 18px;
+    width: 300px;
+    height: 350px;
+}
+
+.contactTitle {
+    margin-bottom: 100px;
+}
+
 
 /* RESPONSIVE PART */
 
-@media only screen and (min-width: 100px) and (max-width: 930px) {}
+@media only screen and (max-width: 1400px) {
+    .byeSvg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .contactForm {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        background-color: red;
+    }
+}
 
 @media only screen and (min-width: 400px) and (max-width: 930px) {
     .contactMe {
         width: 100vw;
     }
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* IMPORTED */
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+form input,
+form textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+.cf {
+    margin: 2rem auto;
+}
+
+form textarea {
+    height: 156px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }

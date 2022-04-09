@@ -49,8 +49,10 @@
             <div class="header-slogan-title">Hi, I'm Gianni !</div>
             <div class="header-slogan-title2">Full-Stack Developer</div>
             <!-- <img src="/public/img/cvPhoto.png" alt="" class="imgId"> -->
+            <a href="#contactMe">
+                <button class="button-29 buttonTemplate " role="button " id="contactMeHeader"> Contact Me <i class="far fa-paper-plane"></i></button>
+            </a>
             
-            <button class="button-29 buttonTemplate " role="button "> Contact Me <i class="far fa-paper-plane"></i></button>
         </div>
         <img src="/public/img/userHeader.svg" class="heroHeader" id="heroHeader">
         

@@ -1,6 +1,5 @@
 window.addEventListener('load', init, false);
 
-
 function init() {
     palette = document.getElementById('palette-button');
 
@@ -80,6 +79,7 @@ function changeColor1() {
     changeColorTemp("#2F3A8F", "#FE7E6D", "#ff523b", "#474554", "#F2ECFF");
     $("#heroHeader").attr("src", "/public/img/userHeader.svg");
     $("#welcomeSvg").attr("src", "/public/img/welcomingBlue.svg");
+    $("#byeSvg").attr("src", "/public/img/byeBlue.svg");
     return;
 }
 
@@ -87,6 +87,7 @@ function changeColor2() {
     changeColorTemp("#6b705c", "#f4a261", "#F98224", "#4D5437", "#ECF5CF");
     $("#heroHeader").attr("src", "/public/img/userHeader2.svg");
     $("#welcomeSvg").attr("src", "/public/img/welcomingGreen.svg");
+    $("#byeSvg").attr("src", "/public/img/byeGreen.svg");
     return;
 }
 
@@ -94,6 +95,7 @@ function changeColor3() {
     changeColorTemp("#8946A6", "#5FBAB0", "#49817A", "#323232", "#FFE7FF");
     $("#heroHeader").attr("src", "/public/img/userHeader3.svg");
     $("#welcomeSvg").attr("src", "/public/img/welcomingPink.svg");
+    $("#byeSvg").attr("src", "/public/img/byePink.svg");
     return;
 }
 

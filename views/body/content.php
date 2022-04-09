@@ -76,7 +76,7 @@
             Thank you for beeing here and do not forget to discover my Portfolio section to discover other projects I have worked on.
         </div>
         <div class="resumeButton">
-            <a href="public/files/GJCVVF.pdf">
+            <a href="public/files/GJCV.pdf">
                 <button class="button-29 " role="button "> Download my Resume <i class="fas fa-download"></i></button>
             </a>
         </div>
@@ -97,34 +97,11 @@
         </div> -->
     </div>
     <div class="sections contactMe" id="contactMe">
-        <div class="titleSectionsL">
+        <div class="titleSectionsL contactTitle">
             CONTACT ME.
         </div>
-        <!-- <div class="form" method="POST">
-            
-            <div class="form-name">
-                <div class="form-label">
-                    NAME
-                </div>
-                <input class="form-name-input name" name="name" placeholder="Your name">
-            </div>
-            <div class="form-email">
-                <div class="form-label">
-                    E-MAIL
-                </div>
-                <input class="form-email-input email" name="email" placeholder="Your e-mail">
-            </div>
-            <div class="form-message">
-                <div class="form-label">
-                    MESSAGE
-                </div>
-                <textarea class="form-message-input message" name="message" placeholder="Your message here"></textarea>
-            </div>
-            <button type="submit" name="submit">SEND</button>
-            
-
-        </div> -->
-        <form method="post" name="myemailform" action="/views/body/sendMail.php">
+        <!-- <div class="contactForm">
+            <form method="post" name="myemailform" action="/views/body/sendMail.php">
 
             Enter Name:	<input type="text" name="name">
 
@@ -133,8 +110,24 @@
             Enter Message:	<textarea name="message"></textarea>
 
             <input type="submit" name="submitButton" id="submitButton" value="Send Form">
+            </form>
+        </div> -->
+
+        <form class="cf" method="post" name="myemailform" action="/views/body/sendMail.php">
+            <div class="half left cf">
+                <input type="text" id="input-name" placeholder="Name" name="name">
+                <input type="email" id="input-email" placeholder="Email address" name="email">
+            </div>
+            <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Message" name="message"></textarea>
+            </div>  
+            <input class="button-29" type="submit" value="Send Message" name="submitButton" id="submitButton">
         </form>
+        <img src="/public/img/byeBlue.svg" class="byeSvg" data-aos="fade-right" id="byeSvg">
+        
+        
     </div>
+    
 </div>  
 
 

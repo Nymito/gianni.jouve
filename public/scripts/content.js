@@ -1,6 +1,6 @@
 window.addEventListener('load', init, false);
 
-$(".form").click(function(e) {
+$(".myemailform").click(function(e) {
     e.preventDefault();
 })
 

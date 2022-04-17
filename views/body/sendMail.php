@@ -28,4 +28,6 @@
     
     if(!mail($to, $subject, $body, $header))
         http_response_code(500);
+    else
+        header( 'Location: https://giannijouve.com/?mail=true' );
 ?>

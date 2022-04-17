@@ -105,11 +105,11 @@
 
         <form class="cf" method="post" name="myemailform" action="">
             <div class="half left cf">
-                <input type="text" id="input-name" placeholder="Name" name="name">
-                <input type="email" id="input-email" placeholder="Email address" name="email">
+                <input type="text" id="input-name" placeholder="Name" name="name" required>
+                <input type="email" id="input-email" placeholder="Email address" name="email" required>
             </div>
             <div class="half right cf">
-                <textarea name="message" type="text" id="input-message" placeholder="Message" name="message"></textarea>
+                <textarea name="message" type="text" id="input-message" placeholder="Message" name="message" required></textarea>
             </div>  
             <input class="button-29" type="submit" value="Send Message" name="submitButton" id="submitButton">
         </form>

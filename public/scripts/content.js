@@ -1,6 +1,11 @@
 window.addEventListener('load', init, false);
 
+$(".form").click(function(e) {
+    e.preventDefault();
+})
+
 function init() {
+
     palette = document.getElementById('palette-button');
 
     subicon1 = document.getElementById('subicon3');

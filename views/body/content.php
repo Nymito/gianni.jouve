@@ -66,9 +66,9 @@
 
         <div class="contentAbout">
             I am a graduated engineer in computer sciences. Since more than 3 years, I have been hired as an apprentice in 2 huge companies.
-            <b>Thales Alenia Space and Societe Generale</b>.
+            <b>Thales Alenia Space</b> and <b>Societe Generale</b>.
             I enjoy coding, it has been a part of my life for few years now.<br/>
-            <i>For now, the Portfolio section is in progress. Please come back later to witness which projects I have worked on !</i>
+            <i style="font-size: small;">For now, the Portfolio section is in progress. Please come back later to witness which projects I have worked on !</i>
             
         </div>
         <div class="resumeButton">

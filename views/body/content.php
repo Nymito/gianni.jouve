@@ -65,11 +65,12 @@
         
 
         <div class="contentAbout">
+            {{giannijouve.com is in progress ...}}<br/>
             I am a graduated engineer in computer sciences. Since more than 3 years, I have been hired as an apprentice in 2 huge companies.
             Thales Alenia Space and Societe Generale.
             I enjoy coding, it has been a part of my life for few years now.
-            Thank you for beeing here and do not forget to discover my Portfolio section to discover other projects I have worked on.<br/>
-            In progress ...
+            Thank you for beeing here and do not forget to discover my Portfolio section to discover other projects I have worked on.
+            
         </div>
         <div class="resumeButton">
             <a href="public/files/GJCV.pdf">

@@ -1,9 +1,4 @@
-<?php
-    if ( isset( $_POST["submitButton"] ) ) { 
-      header( "Location: localhost:4000" ); 
-      exit; 
-    }
-?> 
+
 <!DOCTYPE html>
 <div class="containerFooter">
     <div class="divisionLine">
@@ -73,7 +68,8 @@
             I am a graduated engineer in computer sciences. Since more than 3 years, I have been hired as an apprentice in 2 huge companies.
             Thales Alenia Space and Societe Generale.
             I enjoy coding, it has been a part of my life for few years now.
-            Thank you for beeing here and do not forget to discover my Portfolio section to discover other projects I have worked on.
+            Thank you for beeing here and do not forget to discover my Portfolio section to discover other projects I have worked on.<br/>
+            In progress ...
         </div>
         <div class="resumeButton">
             <a href="public/files/GJCV.pdf">
@@ -87,14 +83,8 @@
         <div class="titleSectionsR">
             PORTFOLIO.
         </div>
-        <!-- <div class="containerCars">
-            <div class="arrow1"><i class="fa-solid fa-arrow-left"></i></div>
-            <div class="cards">
-                <div class="card1"></div>
-                <div class="card2"></div>
-            </div>
-            <div class="arrow2"></div>
-        </div> -->
+        
+        
     </div>
     <div class="sections contactMe" id="contactMe">
         <div class="titleSectionsL contactTitle">
@@ -113,7 +103,7 @@
             </form>
         </div> -->
 
-        <form class="cf" method="post" name="myemailform" action="/views/body/sendMail.php">
+        <form class="cf" method="post" name="myemailform" action="">
             <div class="half left cf">
                 <input type="text" id="input-name" placeholder="Name" name="name">
                 <input type="email" id="input-email" placeholder="Email address" name="email">
@@ -132,3 +122,38 @@
 
 
 </html>
+<?php
+    /* if ( isset( $_POST["submitButton"] ) ) { 
+        header( "Location: localhost:4000" ); 
+        exit; 
+    } */
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    session_start();
+    if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        http_response_code(500);
+        exit();
+    }
+    
+    if (isset($_SESSION['count'])) $_SESSION['count']++;
+    else $_SESSION['count'] = 0;
+    if ($_SESSION['count'] == 3) {
+        http_response_code(403);
+        exit();
+    }
+    
+    $name = strip_tags(htmlspecialchars($_POST['name']));
+    $email = strip_tags(htmlspecialchars($_POST['email']));
+    $message = strip_tags(htmlspecialchars($_POST['message']));
+    
+    $to = "gianni.jouve@gmail.com";
+    $subject = "Vous avez recu un message de : $name";
+    $body = "Vous avez recu un nouveau message depuis le formulaire de votre site perso.\n\n"."Voici les details :\nNom : $name\n\nMail : $email\n\nMessage :\n$message";
+    $header = "From: noreply@GianniJouve.com\n";
+    $header .= "Reply-To: $email";  
+    $header = "Location: http://localhost:4000/\n";
+    
+    if(!mail($to, $subject, $body, $header))
+        http_response_code(500);
+?>

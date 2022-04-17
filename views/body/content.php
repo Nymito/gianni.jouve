@@ -103,7 +103,7 @@
             </form>
         </div> -->
 
-        <form class="cf" method="post" name="myemailform" action="/result=true">
+        <form class="cf" method="post" name="myemailform" action="">
             <div class="half left cf">
                 <input type="text" id="input-name" placeholder="Name" name="name" required>
                 <input type="email" id="input-email" placeholder="Email address" name="email" required>

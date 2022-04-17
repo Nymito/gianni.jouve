@@ -103,7 +103,7 @@
             </form>
         </div> -->
 
-        <form class="cf" method="post" name="myemailform" action="">
+        <form class="cf" method="post" name="myemailform" action="/result=true">
             <div class="half left cf">
                 <input type="text" id="input-name" placeholder="Name" name="name" required>
                 <input type="email" id="input-email" placeholder="Email address" name="email" required>
@@ -156,4 +156,6 @@
     
     if(!mail($to, $subject, $body, $header))
         http_response_code(500);
+    else
+        header( 'Location: https://google.com/' );
 ?>

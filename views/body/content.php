@@ -83,7 +83,23 @@
         <div class="titleSectionsR">
             PORTFOLIO.
         </div>
-        
+        <div class="containerBis">
+            <a href="https://mvc-first-app.herokuapp.com">
+                <div class="cardBis">
+                    <h3 class="titleBis">NodeJs WebApp</h3>
+                    <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                    </div>
+                    <div class="circle">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                    </svg>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
         
     </div>
     <div class="sections contactMe" id="contactMe">
